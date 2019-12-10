@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Rule of 72 Calculator</h2>
+
+<p>Calculate how much time it will take your original investment to double based on the interest rate.</p>
+<input type="text" id="rate">% <br />
+<button onclick="calc()">Calculate!</button>
+<p id="Result"></p>
+
+<script>
+function calc() {
+var x = 72;
+var y = document.getElementById("rate").value;
+var z = x / y;
+document.getElementById("Result").innerHTML = "Based on a " + y +"% interest rate, your money will double in <b>" + z +" years</b>.";
+}
+</script>
+
+</body>
+</html>
