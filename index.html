@@ -31,7 +31,11 @@ var x = 72;
 var y = document.getElementById("rate").value;
 var z = x / y;
 var w = z.toFixed(2)
-document.getElementById("Result").innerHTML = "Based on a " + y +"% interest rate, your money will double in <b><span title='" + z + "'>" + w +"</span> years</b>.";
+if (isNaN(y)) {
+    document.getElementById("Result").innerHTML = "Please only enter a number.";
+  } else {
+	  document.getElementById("Result").innerHTML = "Based on a " + y +"% interest rate, your money will double in <b><span title='" + z + "'>" + w +"</span> years</b>.";
+}
 }
 </script>
 </div>
