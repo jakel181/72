@@ -20,7 +20,8 @@ function calc() {
 var x = 72;
 var y = document.getElementById("rate").value;
 var z = x / y;
-document.getElementById("Result").innerHTML = "Based on a " + y +"% interest rate, your money will double in <b>" + z +" years</b>.";
+var w = z.toFixed(2)
+document.getElementById("Result").innerHTML = "Based on a " + y +"% interest rate, your money will double in <b><span title='" + z + "'>" + w +"</span> years</b>.";
 }
 </script>
 </div>
